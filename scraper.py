@@ -35,3 +35,11 @@ class PDBScraper:
                 downloaded_files.append(standard_name)
                 
         return downloaded_files
+
+if __name__ == "__main__":
+    scraper = PDBScraper()
+    
+    # Test with Trp-Cage and a small protease
+    samples = ["1L2Y", "1A3N"]
+    files = scraper.fetch_ids(samples)
+    print(f"Downloaded: {files}")
