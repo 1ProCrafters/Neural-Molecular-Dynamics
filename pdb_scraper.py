@@ -1,5 +1,9 @@
 import os
+import ssl
 from Bio.PDB import PDBList
+
+# Bypass SSL verification to avoid certificate errors
+ssl._create_default_https_context = ssl._create_unverified_context
 
 class PDBScraper:
     """

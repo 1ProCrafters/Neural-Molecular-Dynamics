@@ -1,6 +1,6 @@
 import os
 
-from scraper import PDBScraper
+from pdb_scraper import PDBScraper
 from structure_cleaner import StructureCleaner
 from geometry_engine import GeometryEngine
 
